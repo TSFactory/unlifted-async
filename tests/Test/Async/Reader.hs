@@ -10,11 +10,7 @@ import Control.Concurrent.Lifted
 import Control.Exception.Lifted as E
 import Test.Tasty.ExpectedFailure
 
-#if MIN_VERSION_monad_control(1, 0, 0)
-import Control.Concurrent.Async.Lifted.Safe
-#else
-import Control.Concurrent.Async.Lifted
-#endif
+import Control.Concurrent.Async.Unlifted
 import Test.Async.Common
 
 readerTestGroup :: TestTree

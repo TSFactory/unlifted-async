@@ -5,7 +5,7 @@ import Data.Function (fix)
 import Data.IORef
 import Foreign.C.Types (CUInt(..))
 
-import Control.Concurrent.Async.Lifted
+import Control.Concurrent.Async.Unlifted
 
 import Test.Tasty.TH
 import Test.Tasty.HUnit
